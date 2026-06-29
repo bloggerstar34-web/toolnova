@@ -1,50 +1,84 @@
-body{
-font-family:Arial,sans-serif;
-background:#f4f6f9;
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
+body{
+background:#f5f7fb;
+color:#222;
 }
 
-.tool{
-background:#fff;
-padding:20px;
-margin:25px 0;
-border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+header{
+background:#2563eb;
+color:white;
+padding:40px 20px;
+text-align:center;
 }
 
-textarea,
-input,
-select{
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+#search{
 width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid #ddd;
+max-width:500px;
+padding:14px;
+border:none;
+border-radius:10px;
 font-size:16px;
 }
 
-button{
-background:#2563eb;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-decoration:none;
+color:#222;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+margin-bottom:10px;
+font-size:22px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111827;
 color:white;
-padding:12px 20px;
-border:none;
-border-radius:8px;
-cursor:pointer;
 }
 
-button:hover{
-background:#1d4ed8;
+@media(max-width:768px){
+
+header h1{
+font-size:30px;
 }
 
-.result{
-margin-top:15px;
-font-size:18px;
-font-weight:bold;
+.grid{
+padding:20px;
+}
+
 }
