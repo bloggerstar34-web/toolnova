@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Age Calculator</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Age Calculator</h1>
+
+</header>
+
+<div class="grid">
+
+<div class="card">
+
+<input
+id="dob"
+type="date">
+
+<button onclick="calcAge()">
+Calculate Age
+</button>
+
+<h2 id="out"></h2>
+
+</div>
+
+</div>
+
+<script>
+
+function calcAge(){
+
+let dob =
+new Date(
+document
+.getElementById("dob")
+.value
+);
+
+let diff =
+Date.now()
+-
+dob.getTime();
+
+let age =
+new Date(diff);
+
+let years =
+Math.abs(
+age.getUTCFullYear()
+-
+1970
+);
+
+document
+.getElementById("out")
+.innerHTML=
+years+" Years";
+
+}
+
+</script>
+
+</body>
+
+</html>
