@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bloggerstar34-web.github.io/toolnova/sitemap.xml
