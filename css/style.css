@@ -82,3 +82,14 @@ padding:20px;
 }
 
 }
+button{
+cursor:pointer;
+}
+
+input,textarea{
+outline:none;
+}
+
+.card{
+cursor:pointer;
+}
